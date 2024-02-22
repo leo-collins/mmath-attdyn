@@ -8,7 +8,7 @@ function toymap(u, p, n)
 end
 
 u0 = [0.5]
-p0 = [1.1, 0.0]
+p0 = [10000, 0.0]
 
 toy = DeterministicIteratedMap(toymap, u0, p0)
 
@@ -16,4 +16,4 @@ rrange = 0:0.001:(2*pi)
 
 # X, t = trajectory(toy, 100)
 
-interactive_cobweb(toy, rrange, 1; pindex=2)
+interactive_orbitdiagram(toy, 2, 0, 2*pi; u0=[0.5])
