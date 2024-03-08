@@ -9,10 +9,10 @@ function toymap2d(u, p, n)
 end
 
 u0 = [0.3, 0.3]
-p = [4.1, 1.3, 2, 0.5]
+p = [3.1, 1.3, 3, 1.3]
 
 toy2d = DeterministicIteratedMap(toymap2d, u0, p)
 
-X, t = trajectory(toy2d, 10000)
+X, t = trajectory(toy2d, 10000000; Δt=1000)
 
 scatter(X[:, 1], X[:, 2])

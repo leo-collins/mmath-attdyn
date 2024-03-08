@@ -50,4 +50,4 @@ end
 
 par = [0.0005, 0.005, 0.1, 0.005]
 
-@time heatmap(Interp2D(solve(par, 100, 40.0, 0.001)[1], 16), c=:leonardo)
+@time Plots.heatmap(Interp2D(solve(par, 100, 10.0, 0.001)[1], 16), c=:leonardo)
