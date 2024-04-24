@@ -8,11 +8,7 @@ function toymap(u, p, n)
 end
 
 u0 = [0.5]
-<<<<<<< HEAD
 p0 = [2, 0.0]
-=======
-p0 = [3.1, 0.0]
->>>>>>> e3370a313e7e9efc0b262a580387af7fa466b3b9
 
 toy = DeterministicIteratedMap(toymap, u0, p0)
 
